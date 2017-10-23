@@ -20,8 +20,7 @@ Vagrant.configure("2") do |config|
 		vb.memory = 1024
 		vb.cpus = 2 
 	end
-	vm2.vm.provision :shell, :inline => "apt-get update && apt-get install -y nginx"
-	vm2.vm.provision :shell, :inline => "ln -s /vagrant /var/www/html/demo"
+	
   end
 
 end
